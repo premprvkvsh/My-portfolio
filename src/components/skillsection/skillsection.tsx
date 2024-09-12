@@ -110,7 +110,7 @@ const SkillsSection: React.FC = () => {
             visible: { opacity: 1, y: 0, transition: { delay: 0.3 } },
             hidden: { opacity: 0, y: -20 },
           }}
-          className="mb-9 text-center text-xl font-semibold"
+          className="mb-9 text-center text-xl font-semibold text-black"
         >
           Learning Every.Single.Day
         </motion.p>
