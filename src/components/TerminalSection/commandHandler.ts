@@ -11,7 +11,7 @@ const projects: Project[] = [
     id: 1,
     name: "Pytm-main",
     description:
-      "A fullstack chatting website using MERN and socket.io. You can chat with Google Gemini as well.",
+      "Transaction can take place after a user signup, signin and update and the data is being verified from the database.",
   },
   {
     id: 2,
@@ -29,6 +29,12 @@ const projects: Project[] = [
     name: "MERN Todo App",
     description:
       "Just a simple todo app.",
+  },
+  {
+    id: 5,
+    name: "My-portfolio",
+    description:
+      "My portfolio website",
   }
 ];
 

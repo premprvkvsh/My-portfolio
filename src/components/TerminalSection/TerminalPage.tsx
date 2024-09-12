@@ -68,27 +68,27 @@ const TerminalPage: React.FC = () => {
       className="text-left min-h-screen w-full flex-col bg-black flex justify-center items-center p-4"
     >
       <div className="text-left w-full max-w-[55rem] flex items-center justify-center flex-col break-words">
-        <h2 className="text-white w-full text-4xl mb-3">Terminal</h2>
+        <h2 className="text-violet-300 w-full text-4xl mb-3">Terminal</h2>
         <div className="text-white rounded-xl border-2 w-full h-[450px] border-white/30 bg-slate-900 flex flex-col">
           <div className="w-full h-12 flex flex-row justify-between items-center p-3 mb-3">
             <div className="flex space-x-3">
               <a
-                className="bg-red-600 rounded-full h-3 w-3 cursor-pointer"
+                className="bg-red-400 rounded-full h-3 w-3 "
                 // target="blank"
                 // href="https://www.youtube.com/watch?v=VOK4NtCkNGg"
               ></a>
               <a
-                className="bg-yellow-600 rounded-full h-3 w-3 cursor-pointer"
+                className="bg-yellow-400 rounded-full h-3 w-3 "
                 // target="blank"
                 // href="https://www.youtube.com/watch?v=VOK4NtCkNGg"
               ></a>
               <a
-                className="bg-green-600 rounded-full h-3 w-3 cursor-pointer"
+                className="bg-green-400 rounded-full h-3 w-3 "
                 // target="blank"
                 // href="https://www.youtube.com/watch?v=VOK4NtCkNGg"
               ></a>
             </div>
-            <p>prem</p>
+            <p className="text-lg font-bold text-blue-300">prem</p>
             <TerminalIcon />
           </div>
 
@@ -107,7 +107,7 @@ const TerminalPage: React.FC = () => {
                   <pre className="text-gray-400 text-xs whitespace-pre-wrap break-words">
                     {entry.timestamp.toLocaleTimeString()}
                   </pre>
-                  <pre className="mb-1 text-cyan-200 whitespace-pre-wrap break-words">
+                  <pre className="mb-1 text-blue-300 whitespace-pre-wrap break-words">
                     $ {entry.input}
                   </pre>
                   <pre className="mb-2 text-violet-300 whitespace-pre-wrap break-words">
@@ -118,13 +118,13 @@ const TerminalPage: React.FC = () => {
             )}
             <form onSubmit={handleSubmit} className="mt-2">
               <div className="flex items-center">
-                <span className="mr-2 text-cyan-200"> $</span>
+                <span className="mr-2 text-blue-300"> $</span>
                 <input
                   ref={inputRef}
                   type="text"
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  className="flex-1 bg-transparent outline-none text-cyan-200 w-full"
+                  className="flex-1 bg-transparent outline-none text-blue-300 w-full"
                   disabled={isProcessing}
                 />
               </div>
