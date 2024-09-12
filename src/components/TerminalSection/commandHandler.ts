@@ -6,7 +6,7 @@ interface Project {
   description: string;
 }
 
-const projects: Project[] = [
+const projects: Project[] = [  
   {
     id: 1,
     name: "Pytm-main",
@@ -16,13 +16,13 @@ const projects: Project[] = [
   {
     id: 2,
     name: "EasyInvoice",
-    description: "Just a simple notes app.",
+    description: "User-friendly invoice generator application designed to streamline the process of creating, managing, and sending invoices.",
   },
   {
     id: 3,
     name: "Networking-Simulator-GUI-",
     description:
-      "A quote displaying webstie featuring hand-picked quotes from 'The Quotes by Marcus Aurelius'.",
+      "Demonstrate the message transmission between different end devices in the domain of Data link layer.",
   },
   {
     id: 4,
