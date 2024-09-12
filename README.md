@@ -1,4 +1,4 @@
-<p align="center">
+<!-- <p align="center">
   <a href="https://github.com/Yash456k/Yash_Portfolio">
     <img style="height:100px;" src="https://github.com/user-attachments/assets/fd2ebae4-fa3f-45c2-8651-377e58c6a1f2" alt="logo" />
   </a>
@@ -49,7 +49,7 @@
 
 ## Built With
 
-Project is built using NEXTJS Tailwind TypeScript Framer-motion 
+Project is built using NEXTJS Tailwind TypeScript Framer-motion
 
 * [React](https://react.dev/)
 * [Tailwind css](https://tailwindcss.com/)
@@ -82,7 +82,7 @@ cd Yash_Portfolio
 npm install
   ```
 
-Rename .env.example to .env.local and fill the required values 
+Rename .env.example to .env.local and fill the required values
 
 ```sh
 npm run dev
@@ -90,7 +90,7 @@ npm run dev
 
 
 
-## Hosting 
+## Hosting
 * ## Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/)
@@ -106,4 +106,4 @@ Distributed under the MIT License . See [LICENSE](https://github.com/Yash456k/Ya
 
 ## Authors
 
-* **Yash Khambhatta** - [Yash Khambhatta](https://github.com/Yash456k)
+* **Yash Khambhatta** - [Yash Khambhatta](https://github.com/Yash456k) -->
