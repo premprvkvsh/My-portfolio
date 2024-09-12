@@ -1,3 +1,5 @@
+// import chalk from "chalk";
+
 interface Project {
   id: number;
   name: string;
@@ -7,95 +9,96 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: "MERN Chat App",
+    name: "Pytm-main",
     description:
       "A fullstack chatting website using MERN and socket.io. You can chat with Google Gemini as well.",
   },
   {
     id: 2,
-    name: "MERN Notes App",
+    name: "EasyInvoice",
     description: "Just a simple notes app.",
   },
   {
     id: 3,
-    name: "Qoutes by Marcus Aurelius",
+    name: "Networking-Simulator-GUI-",
     description:
       "A quote displaying webstie featuring hand-picked quotes from 'The Quotes by Marcus Aurelius'.",
   },
+  {
+    id: 4,
+    name: "MERN Todo App",
+    description:
+      "Just a simple todo app.",
+  }
 ];
 
 export const handleCommand = (cmd: string): string => {
   const trimmedCmd = cmd.trim().toLowerCase();
 
-  switch (true) {
-    case trimmedCmd === "help":
-      return [
-        "type:",
-        "-> help: Show this help message",
-        "-> clear: Clear terminal",
-        // "-> echo: Display the text",
-        "-> proj: View all my projects",
-        "-> proj ls: List some of my projects",
-        "-> proj info [id]: Show project details",
-        "-> about: info about terminal",
-        "-> prem: info about me",
-        "-> date: Display current date and time",
-        "-> ls: List files",
-      ].join("\n");
-
-
-      // return [
-      //   "Commands:",
-      //   "- about: About me",
-      //   "- education"
-      // ]
+switch (true) {
+  case trimmedCmd === "help":
+    return [
+      "type: ",
+      "→ help               ".padEnd(65) + "Show this help message",
+      "→ about              ".padEnd(65) + "About me",
+      "→ education          ".padEnd(65) + "My Education",
+      "→ skills             ".padEnd(65) + "My Tech Skills",
+      "→ proj               ".padEnd(65) + "My Tech Projects",
+      "→ proj info [id]     ".padEnd(65) + "Project details",
+      "→ resume             ".padEnd(65) + "My Resume",
+      "→ contact            ".padEnd(65) + "Contact Me",
+      "→ date               ".padEnd(65) + "Display date and time",
+      "→ clear              ".padEnd(65) + "Clear terminal",
+    ].join("\n");
 
 
 
 
-    case trimmedCmd.startsWith("echo "):
-      return cmd.slice(5).trim();
 
-    case trimmedCmd.startsWith("sudo"):
-      return "Good effort, but no access for you.";
+  case trimmedCmd === "proj":
+    return projects.map((p) => `${p.id}. ${p.name}`).join("\n");
 
-    case trimmedCmd === "proj ls":
-      return projects.map((p) => `${p.id}. ${p.name}`).join("\n");
+  case /^proj info \d+$/.test(trimmedCmd):
+    const id = parseInt(trimmedCmd.split(" ")[2]);
+    const project = projects.find((p) => p.id === id);
+    return project
+      ? `Project: ${project.name}\nDescription: ${project.description}`
+      : "Project not found";
 
-    case /^proj info \d+$/.test(trimmedCmd):
-      const id = parseInt(trimmedCmd.split(" ")[2]);
-      const project = projects.find((p) => p.id === id);
-      return project
-        ? `Project: ${project.name}\nDescription: ${project.description}`
-        : "Project not found";
+  case trimmedCmd === "about":
+    // return "Hey there! I'm Prem, a passionate full-stack developer with expertise in the MERN stack and a growing interest in DevOps. I've built a variety of projects and I'm always excited to learn new things, collaborate with like-minded individuals, and contribute to the tech community.";
+    window.location.href = "about"
+    return "About me";
 
-    case trimmedCmd === "about":
-      return "This is an TypeScript React based terminal component I made.";
 
-    case trimmedCmd === "date":
-      return new Date().toLocaleString();
+  case trimmedCmd === "education":
+    return "I am currently in my final year at GL Bajaj Institute of Technology & Management, Greater Noida. I completed my high school education in Madhubani, which is my hometown.";
 
-    case trimmedCmd === "prem":
-      return "Hey there! I'm Prem, a full-stack developer who has experience in MERN, currently learning nextJs, interested in DevOps as well.";
+  case trimmedCmd === "date":
+    return new Date().toLocaleString();
 
-    case trimmedCmd === "ls":
-      return "open.me   dont_open.me";
+  case trimmedCmd === "skills":
+    return `Languages: JavaScript, TypeScript, Java, C, C++, Python\n
+Frontend: HTML, Tailwind CSS, Next.js, React.js, Recoil, Redux\n
+Backend: Node.js, Express.js, MongoDB, TypeScript, APIs, RESTful APIs, gRPC, ORM, Postgres, Prisma, Postman, Cloudflare, AWS\n
+Tools: Git/GitHub, Linux, Monorepos, CI/CD, Docker`;
 
-    case trimmedCmd === "cat open.me":
-      window.location.href = "https://www.youtube.com/watch?v=8ScAnaU0FFE";
-      return "";
+  case trimmedCmd === "proj":
+    window.location.href = "/all-projects";
+    return "Have fun!";
 
-    case trimmedCmd === "cat dont_open.me":
-      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-      return "You asked for it";
-    case trimmedCmd === "proj":
-      window.location.href = "/all-projects";
-      return "have fun!";
+  case trimmedCmd === "resume":
+    window.location.href = "https://rb.gy/xick7w"; 
+    return "Opening resume...";
 
-    default:
-      if (trimmedCmd.startsWith("cat ")) {
-        return "Can't find file. Please mention a file that exists.";
-      }
-      return `Command not found: ${trimmedCmd}. Type 'help' for available commands.`;
-  }
+    case trimmedCmd === "contact":
+      window.location.href = "#contact"
+      return "thank you for connecting";
+
+  default:
+    if (trimmedCmd.startsWith("cat ")) {
+      return "Can't find file. Please mention a file that exists.";
+    }
+    return `Command not found: ${trimmedCmd}. Type 'help' for available commands.`;
+}
 };
