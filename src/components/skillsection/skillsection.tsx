@@ -12,6 +12,13 @@ import socketPng from "../../assets/socketio.png";
 import dockerPng from "../../assets/docker.png";
 import reduxPng from "../../assets/redux.png";
 
+import postgresPng from "../../assets/postgres.png";
+import prismaPng from "../../assets/prisma-2.png";
+// import linuxPng from "../../assets/linux.png";
+import devopsPng from "../../assets/devopss.png";
+import gitPng from "../../assets/git1.png";
+import postmanPng from "../../assets/postman.png";
+
 interface Skill {
   name: string;
   image: string;
@@ -28,6 +35,12 @@ const skills: Skill[] = [
   { name: "Docker", image: dockerPng },
   { name: "Socket.io", image: socketPng },
   { name: "Redux", image: reduxPng },
+  { name: "PostgreSQL", image: postgresPng },
+  { name: "Prisma", image: prismaPng },
+  // { name: "Linux", image: linuxPng },
+  { name: "DevOps", image: devopsPng },
+  { name: "Git", image: gitPng},
+  { name: "Postman", image: postmanPng},
 ];
 
 const SkillCard: React.FC<{ skill: Skill; index: number }> = ({
