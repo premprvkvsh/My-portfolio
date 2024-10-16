@@ -35,7 +35,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "My-portfolio website",
-    description: "A powerful note-taking application built on the MERN stack.",
+    description: "personalised portfolio website",
     imageUrl: MernNotesPng,
     sourceCodeUrl: "https://github.com/Yash456k/MERN_Notes_App",
     demoUrl: "https://yash456k-basic-notes-mern-app.netlify.app/",
