@@ -16,7 +16,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Quotes by Marcus Aurelius",
+    title: "EasyInvoice",
     description:
       "An inspiring collection of wisdom from the great Stoic philosopher Marcus Aurelius.",
     imageUrl: marcusPng,
@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "MERN + socket.io Chat App",
+    title: "Paytm-main",
     description:
       "A real-time chat application built with modern web technologies.",
     imageUrl:chatAppPng ,
@@ -34,7 +34,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "MERN Notes App",
+    title: "My-portfolio website",
     description: "A powerful note-taking application built on the MERN stack.",
     imageUrl: MernNotesPng,
     sourceCodeUrl: "https://github.com/Yash456k/MERN_Notes_App",
