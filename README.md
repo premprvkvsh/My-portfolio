@@ -16,8 +16,12 @@
 
 ## Table Of Contents
 
-<!--
-## Screenshots -->
+
+## Screenshots 
+<img width="1440" alt="Screenshot 2024-10-17 at 11 43 24 PM" src="https://github.com/user-attachments/assets/f03b4df1-3148-48dd-af4d-3820be86e9e1">
+<img width="1440" alt="Screenshot 2024-10-17 at 11 43 44 PM" src="https://github.com/user-attachments/assets/f032374c-7d26-44b2-8812-180fd516cb4c">
+<img width="1426" alt="Screenshot 2024-10-17 at 11 43 37 PM" src="https://github.com/user-attachments/assets/58f9b51d-9afa-4e49-803e-453bebe6f3d6">
+
 
 ## Getting Started
 
