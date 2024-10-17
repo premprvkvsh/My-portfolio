@@ -60,9 +60,9 @@ const HeroSection: React.FC = () => {
         style={{ color: colorSet.primary }}
       >
         <div className="text-center md:text-left md:w-5/12">
-          <p className="text-xl flex md:justify-start justify-center items-center">
+          {/* <p className="text-xl flex md:justify-start justify-center items-center">
             <GitFork />  git commit -m "My-portfolio"
-          </p>
+          </p> */}
           <h1 className="mb-4 text-6xl font-bold text-violet-400 md:text-8xl">
           Prem Prakash
           </h1>

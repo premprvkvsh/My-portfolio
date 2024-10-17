@@ -16,8 +16,9 @@ function MainContent() {
     <>
       <HeroSection />
       <SkillsSection />
-      <Projects />
       <TerminalPage />
+      <Projects />
+     
       
       <EndSection />
     </>

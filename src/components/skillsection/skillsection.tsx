@@ -26,21 +26,25 @@ interface Skill {
 
 const skills: Skill[] = [
   { name: "TypeScript", image: typePng },
+  { name: "Node.js", image: nodePng },
   { name: "NextJs", image: nextPng },
   { name: "React", image: reactPng },
-  { name: "Node.js", image: nodePng },
-  { name: "MongoDb", image: mongoPng },
   { name: "Express", image: expressPng },
-  { name: "Tailwind CSS", image: tailwindPng },
-  { name: "Docker", image: dockerPng },
-  { name: "Socket.io", image: socketPng },
+  { name: "Postman", image: postmanPng},
   { name: "Redux", image: reduxPng },
+  { name: "Tailwind CSS", image: tailwindPng },
+  { name: "MongoDb", image: mongoPng },
   { name: "PostgreSQL", image: postgresPng },
   { name: "Prisma", image: prismaPng },
-  // { name: "Linux", image: linuxPng },
+  { name: "Docker", image: dockerPng },
+  { name: "Socket.io", image: socketPng },
   { name: "DevOps", image: devopsPng },
   { name: "Git", image: gitPng},
-  { name: "Postman", image: postmanPng},
+  
+  
+  // { name: "Linux", image: linuxPng },
+ 
+  
 ];
 
 const SkillCard: React.FC<{ skill: Skill; index: number }> = ({

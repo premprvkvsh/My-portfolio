@@ -1,8 +1,8 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
-import marcusPng from "../assets/quotesbymarcusaurelius.png";
+import easyPng from "../assets/EasyInvoice.png";
 import chatAppPng from "../assets/MERN_Socketio_ChatApp_Screenshot.png";
-import MernNotesPng from "../assets/MERN_Notes_App.png";
+import portfolioPng from "../assets/portfolio.png";
 
 interface Project {
   id: number;
@@ -18,27 +18,27 @@ const projects: Project[] = [
     id: 1,
     title: "EasyInvoice",
     description:
-      "An inspiring collection of wisdom from the great Stoic philosopher Marcus Aurelius.",
-    imageUrl: marcusPng,
-    sourceCodeUrl: "https://github.com/Yash456k/Marcus_Aurelius_Fullstack",
-    demoUrl: "https://quotesbymarcusaurelius.vercel.app/",
+      "EasyInvoice is a user-friendly invoice generator application.",
+    imageUrl: easyPng,
+    sourceCodeUrl: "https://github.com/premprvkvsh/EasyInvoice",
+    demoUrl: "https://easy-invoice-one.vercel.app",
   },
   {
     id: 2,
     title: "Paytm-main",
     description:
-      "A real-time chat application built with modern web technologies.",
+      "Transaction can take place after a user signup, signin and update and the data.",
     imageUrl:chatAppPng ,
-    sourceCodeUrl: "https://github.com/Yash456k/SocketIO-MERN-chatApp",
-    demoUrl: "https://socket-io-mern-chat-app.vercel.app/",
+    sourceCodeUrl: "https://github.com/premprvkvsh/paytm-main",
+    demoUrl: "",
   },
   {
     id: 3,
     title: "My-portfolio website",
-    description: "personalised portfolio website",
-    imageUrl: MernNotesPng,
-    sourceCodeUrl: "https://github.com/Yash456k/MERN_Notes_App",
-    demoUrl: "https://yash456k-basic-notes-mern-app.netlify.app/",
+    description: "Personalised portfolio website showcasing my skills and projects",
+    imageUrl: portfolioPng,
+    sourceCodeUrl: " https://github.com/premprvkvsh/My-portfolio",
+    demoUrl: "",
   },
 ];
 
