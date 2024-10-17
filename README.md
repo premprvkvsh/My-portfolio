@@ -8,9 +8,8 @@
    
    
     <br/>
-    <!-- <a target="_blank" href="https://yashkportfolio.vercel.app/">View Demo</a> -->
-    .
-    <a target="_blank" href="https://github.com/premprvkvsh/My-portfolio/issues">Report Bug</a>
+   
+ 
   </p>
 </p>
 
@@ -38,9 +37,7 @@ cd My-portfolio
 npm install
 ```
 
-Rename .env.example to .env.local and fill the required values
-
-```sh
+```
 npm run dev
 ```
 
