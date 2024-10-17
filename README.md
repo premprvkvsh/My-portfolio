@@ -45,6 +45,7 @@ npm run dev
 ## Hosting
 
 - ## Vercel
+https://prem-eta.vercel.app
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/)
 <br/>
