@@ -60,24 +60,20 @@ const HeroSection: React.FC = () => {
         style={{ color: colorSet.primary }}
       >
         <div className="text-center md:text-left md:w-5/12">
-          {/* <p className="text-xl flex md:justify-start justify-center items-center">
-            <GitFork />  git commit -m "My-portfolio"
-          </p> */}
+          <p className="text-2xl flex md:justify-start justify-center items-center">
+          Welcome, I'm
+          </p>
           <h1 className="mb-4 text-6xl font-bold text-violet-400 md:text-8xl">
           Prem Prakash
           </h1>
         
           <p className="my-4 text-violet-300 text-4xl font-semibold">
-            I am a <TypeWriter texts={texts} color={colorSet.primary} />
+           <TypeWriter texts={texts} color={colorSet.primary} />
           </p>
          <br />
          
           <p className="my-4 text-2xl break-words text-pretty text-violet-300">
-            I develop{" "}
-            <span style={{ color: colorSet.secondary }}>Full-stack</span>{" "}
-            websites/ applications, currently learning about{" "}
-            <span style={{ color: colorSet.secondary }}>DevOps</span> +
-            Exploring Open Source
+          I build{" "} <span style={{ color: colorSet.secondary }}>Full-stack</span> web applications, currently focused on{" "} <span style={{ color: colorSet.secondary }}>DevOps</span> and open-source contributions.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-10">
             <button
