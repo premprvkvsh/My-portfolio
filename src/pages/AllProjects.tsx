@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 import easyPng from "../assets/EasyInvoice.png";
-import chatAppPng from "../assets/MERN_Socketio_ChatApp_Screenshot.png";
+import paytmPng from "../assets/paytm.png";
 import portfolioPng from "../assets/portfolio.png";
 
 interface Project {
@@ -28,7 +28,7 @@ const projects: Project[] = [
     title: "Paytm-main",
     description:
       "Transaction can take place after a user signup, signin and update and the data.",
-    imageUrl:chatAppPng ,
+    imageUrl:paytmPng ,
     sourceCodeUrl: "https://github.com/premprvkvsh/paytm-main",
     demoUrl: "",
   },

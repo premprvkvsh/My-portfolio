@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { createSwapy } from "swapy";
 import { motion } from "framer-motion";
 
-import chatAppPng from "../../assets/MERN_Socketio_ChatApp_Screenshot.png";
+import paytmPng from "../../assets/paytm.png";
 
 
 import easyPng from "../../assets/EasyInvoice.png";
@@ -30,7 +30,7 @@ const projects: Project[] = [
   {
     id: "b",
     title: "Paytm-main",
-    image: chatAppPng,
+    image: paytmPng,
     alt: "Transaction app",
   },
   {
