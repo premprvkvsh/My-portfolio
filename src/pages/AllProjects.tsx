@@ -53,7 +53,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
     </div>
     <div className="p-6 flex-grow flex flex-col justify-between">
       <div>
-        <h3 className="text-xl font-semibold mb-2 text-gray-800">
+        <h3 className="text-xl font-semibold mb-2 text-gray-900">
           {project.title}
         </h3>
         <p className="text-gray-600 mb-4">{project.description}</p>
@@ -63,7 +63,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
           href={project.sourceCodeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition-colors duration-300"
+          className="flex items-center px-4 py-2 bg-gray-700 text-white rounded hover:bg-gray-600 transition-colors duration-300"
         >
           <Github className="mr-2" size={18} />
           Source Code
@@ -72,7 +72,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
           href={project.demoUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center px-4 py-2 bg-[#ff8c00] text-white rounded hover:bg-[#e67e00] transition-colors duration-300"
+          className="flex items-center px-4 py-2 bg-[#844dbf] text-white rounded hover:bg-[#844dbf] transition-colors duration-300"
         >
           <ExternalLink className="mr-2" size={18} />
           View Demo

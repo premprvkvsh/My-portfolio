@@ -17,7 +17,7 @@ type ProjectData = {
 };
 
 const colors = {
-  primary: "#ff8c00",
+  primary: "#844dbf",
   secondary: "#000000",
   text: "#000000",
   background: "#ffffff",

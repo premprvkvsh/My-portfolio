@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { createSwapy } from "swapy";
 import { motion } from "framer-motion";
-import marcusPng from "../../assets/quotesbymarcusaurelius.png";
+
 import chatAppPng from "../../assets/MERN_Socketio_ChatApp_Screenshot.png";
-import MernNotesPng from "../../assets/MERN_Notes_App.png";
+
+
+import easyPng from "../../assets/EasyInvoice.png";
+import portfolioPng from "../../assets/portfolio.png";
 
 import Alert from "../Alert";
 import ProjectCard from "./ProjectCard";
@@ -20,21 +23,21 @@ interface Project {
 const projects: Project[] = [
   {
     id: "a",
-    title: "Quotes by Marcus Aurelius",
-    image: marcusPng,
-    alt: "Marcus Aurelius Quote",
+    title: "EasyInvoice",
+    image: easyPng,
+    alt: "Invoice app",
   },
   {
     id: "b",
-    title: "MERN + socket.io Chat App",
+    title: "Paytm-main",
     image: chatAppPng,
-    alt: "Chat App",
+    alt: "Transaction app",
   },
   {
     id: "c",
-    title: "MERN Notes App",
-    image: MernNotesPng,
-    alt: "Mern Notes App",
+    title: "My-portfolio",
+    image: portfolioPng,
+    alt: "personal website",
   },
 ];
 
@@ -74,9 +77,9 @@ const highlightedProjects: React.FC = () => {
             navigate("/all-projects");
             window.scrollTo({ top: 0, behavior: "auto" });
           }}
-          className="p-2 sm:p-3 rounded-lg border border-zinc-700 mt-4 sm:mt-6 bg-zinc-100 text-zinc-700 font-semibold shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out text-xs sm:text-sm"
+          className="p-2 sm:p-3 rounded-lg border border-viloet-950 mt-4 sm:mt-6 bg-zinc-200 text-zinc-900 font-semibold shadow-lg transform hover:scale-110 transition-transform duration-300 ease-in-out text-xs sm:text-sm"
         >
-          View all my projects
+        All projects
         </button>
       </div>
       <div
@@ -84,8 +87,8 @@ const highlightedProjects: React.FC = () => {
         className="md:w-1/2 w-full h-[40%] md:h-full flex flex-col justify-around items-center p-2 md:p-4 lg:p-10 text-xs sm:text-sm md:text-base lg:text-xl"
       >
         <Alert
-          title="Interact with the Projects!"
-          description="Drag and swap the items below to view detailed project information in the showcase area."
+          title="Project Showcase"
+          description="Drag and swap items below to view detailed project information."
         />
         <div
           className="h-1/2 md:h-1/3 w-3/4 md:w-1/2 rounded-lg shadow-xl transform hover:scale-105 transition duration-500 ease-in-out text-base sm:text-xl md:text-2xl lg:text-4xl border-2 border-dashed border-black flex items-center justify-center"
