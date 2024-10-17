@@ -1,5 +1,5 @@
 import React from "react";
-import { MailPlus, GitFork } from "lucide-react";
+import { MailPlus } from "lucide-react";
 import { GitHubLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 
 import { motion } from "framer-motion";
