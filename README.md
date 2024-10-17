@@ -62,6 +62,6 @@ https://prem-eta.vercel.app
 
 Distributed under the MIT License . See [LICENSE](https://github.com/Yash456k/Yash_Portfolio/blob/main/LICENSE) for more information. -->
 
-## Authors
+## Author
 
 - **Prem Prakash** - [Prem Prakash](https://github.com/premprvkvsh)
