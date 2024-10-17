@@ -93,7 +93,7 @@ const projectsData: ProjectData[] = [
       
     ],
     github: "https://github.com/premprvkvsh/My-portfolio",
-    demo: "",
+    demo: "https://prem-eta.vercel.app/",
   },
 ];
 
