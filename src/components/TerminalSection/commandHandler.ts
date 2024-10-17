@@ -94,7 +94,7 @@ Tools: Git/GitHub, Linux, Monorepos, CI/CD, Docker`;
     return "Have fun!";
 
   case trimmedCmd === "resume":
-    window.location.href = "https://rb.gy/xick7w"; 
+    window.location.href = "https://blush-kaela-9.tiiny.site/"; 
     return "Opening resume...";
 
     case trimmedCmd === "contact":

@@ -241,7 +241,7 @@ function About() {
           </div>
           <a
             className="inline-flex items-center px-6 py-3 bg-[#5a2d8a] text-violet-100 rounded-3xl hover:bg-[#844dbf] transition-colors duration-200 text-lg"
-            href="https://rb.gy/xick7w/"
+            href="https://blush-kaela-9.tiiny.site/"
             target="_blank"
             rel="noopener noreferrer"
           >

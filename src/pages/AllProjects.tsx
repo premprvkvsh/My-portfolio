@@ -38,7 +38,7 @@ const projects: Project[] = [
     description: "Personalised portfolio website showcasing my skills and projects",
     imageUrl: portfolioPng,
     sourceCodeUrl: " https://github.com/premprvkvsh/My-portfolio",
-    demoUrl: "",
+    demoUrl: "https://prem-eta.vercel.app/",
   },
 ];
 
