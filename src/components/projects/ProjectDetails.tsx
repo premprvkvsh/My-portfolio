@@ -114,7 +114,7 @@ const projectsData: ProjectData[] = [
     tools: [{ name: "JWT", color: colors.primary }],
     github: "https://github.com/premprvkvsh/WanderNest",
     demo: "https://wandernestglb.netlify.app",
-  }
+  },
 ];
 
 const TechToolList: React.FC<{ items: TechTool[]; label: string }> = ({
