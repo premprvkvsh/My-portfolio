@@ -115,6 +115,13 @@ const highlightedProjects: React.FC = () => {
             data-swapy-slot="three"
           >
             <ProjectCard project={projects[2]} />
+            
+          </div>
+          <div
+            className="h-3/4 md:h-1/2 w-[45%] md:w-1/3 rounded-lg shadow-xl transform hover:scale-105 transition duration-500 ease-in-out"
+            data-swapy-slot="three"
+          >
+            <ProjectCard project={projects[3]} />
           </div>
         </div>
       </div>
