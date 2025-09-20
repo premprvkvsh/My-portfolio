@@ -7,6 +7,7 @@ import paytmPng from "../../assets/paytm.png";
 
 import easyPng from "../../assets/EasyInvoice.png";
 import portfolioPng from "../../assets/portfolio.png";
+import WanderPng from "../../assets/Wander.png";
 
 import Alert from "../Alert";
 import ProjectCard from "./ProjectCard";
@@ -38,6 +39,12 @@ const projects: Project[] = [
     title: "My-portfolio",
     image: portfolioPng,
     alt: "personal website",
+  },
+  {
+    id: "d",
+    title: "WanderNest",
+    image: WanderPng,
+    alt: "accomodation app",
   },
 ];
 
