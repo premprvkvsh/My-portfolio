@@ -3,6 +3,9 @@ import { ExternalLink, Github } from "lucide-react";
 import easyPng from "../assets/EasyInvoice.png";
 import paytmPng from "../assets/paytm.png";
 import portfolioPng from "../assets/portfolio.png";
+//a
+import WanderPng from "../assets/Wander.png";
+
 
 interface Project {
   id: number;
@@ -39,6 +42,15 @@ const projects: Project[] = [
     imageUrl: portfolioPng,
     sourceCodeUrl: " https://github.com/premprvkvsh/My-portfolio",
     demoUrl: "https://prem-eta.vercel.app/",
+  },
+  //added
+  {
+    id: 4,
+    title: "WanderNest",
+    description: "location-aware accommodation recommendation platform",
+    imageUrl: WanderPng,
+    sourceCodeUrl: "https://github.com/premprvkvsh/WanderNest",
+    demoUrl: "https://wandernestglb.netlify.app",
   },
 ];
 
