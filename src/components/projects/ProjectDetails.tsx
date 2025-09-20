@@ -95,6 +95,26 @@ const projectsData: ProjectData[] = [
     github: "https://github.com/premprvkvsh/My-portfolio",
     demo: "https://prem-eta.vercel.app/",
   },
+  //added
+  {
+    id: "d",
+    title: "WanderNest",
+    description:
+      "WanderNest is a ocation-aware accommodation recommendation platform .",
+    features: [
+      '"Built a location-aware recommendation platform with real-time map visualizations."',
+      "Integrated AI to generate dynamic travel suggestions based on user preferences.",
+      "Designed a responsive, modular UI with single-page navigation and chatbot integration.",
+    ],
+    tech: [
+      { name: "JavaScript", color: colors.primary },
+      { name: "Tailwind CSS", color: colors.primary },
+      { name: "Cohere AI", color: colors.primary },
+    ],
+    tools: [{ name: "JWT", color: colors.primary }],
+    github: "https://github.com/premprvkvsh/WanderNest",
+    demo: "https://wandernestglb.netlify.app",
+  }
 ];
 
 const TechToolList: React.FC<{ items: TechTool[]; label: string }> = ({
